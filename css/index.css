@@ -3,6 +3,14 @@
 @import "./button-icon.css";
 @import "./perfil.css";
 @import "./wrapper.css";
+@import "./menu.css";
+@import "./mensaje.css";
+@import "./testimonio.css";
+@import "./project.css";
+@import "./social.css";
+@import "./footer.css";
+@import "./formulario.css";
+@import "./title.css";
 
 :root{
     --fontbase: 'Poppins', sans-serif;
@@ -11,6 +19,7 @@
     --headline3: bold 48px/77px var(--fontbase);
     --headline4: bold 34px/55px var(--fontbase);
     --headline5: bold 24px/38px var(--fontbase);
+    --headline6:      20px/34px var(--fontbase);
     --body1:          16px/25px var(--fontbase);
     --body2:          14px/22px var(--fontbase);
     --button:    bold 14px/22px var(--fontbase);
@@ -26,5 +35,6 @@ body{
     background: var(--gradient);
     min-block-size: 100vh;
     font: var(--body1);
+    margin: 0px;
 }
 

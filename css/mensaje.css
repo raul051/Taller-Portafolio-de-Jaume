@@ -1,0 +1,30 @@
+.mensaje{
+    text-align: center;
+    padding-block-start: 40px;
+    padding-block-end: 120px;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+}
+.mensaje p{
+    font: var(--headline6);
+    color: var(--purpura);
+}
+
+.mensaje a{
+    text-decoration: none;
+    font: var(--headline5);
+    color: var(--purpura);
+}
+.mensaje a:nth-of-type(2){
+    background: none;
+    border: none;
+}
+
+@media screen and (min-width: 1024px){
+    .mensaje{
+        padding-block-start: 200px;
+        padding-block-end: 200px;
+        padding-inline-start: 233px;
+        padding-inline-end: 233px;
+    }
+}

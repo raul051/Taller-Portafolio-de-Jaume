@@ -10,13 +10,37 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-<div class="wrapper">
+
     <header class="header">
-        <img src="./images/LOGO.png" width="70" height="20" alt="Logo super bonito">
-        <button class="button" >Curriculum</button>
+        <div class="wraper">
+            <div class="header-content">
+                <img src="./images/LOGO.png" width="70" height="20" alt="Logo super bonito">
+        
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a class="is-active" href="#main">Hola</a>
+                        </li>
+                        <li>
+                            <a href="#project">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#contacto">Hablemos</a>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <button class="button" >Curriculum</button>
+            </div>
+            
+        </div>
+        
     </header>
 
-    <section class="hero">
+<div class="wrapper">
+    
+
+    <section aria-label="main" class="hero" id="main">
         <div class="hero-image">
             <img src="./images/perfil.jpg" class="hero-foto" width="338" height="330" alt="">
         </div>
@@ -31,7 +55,7 @@
             </p>
         
         
-        <div class="hero-sociales">
+        <div class="sociales">
             <a class="button-icon" href="tel:2471270288"><img src="./icons/icon-phone.svg" alt=""></a>
             <a class="button-icon" href="mail:raultamayobriones@gmail.com"><img src="./icons/icon-important_mail.svg" alt=""></a>
             <a class="button-icon" href="dev.raul.qwerty"><img src="./icons/icon-instagram.svg" alt=""></a>
@@ -41,9 +65,140 @@
     </div>
     </section>
 
+    <section class="mensaje">
+        <p>
+            A lo largo de mi carrera como Frontend, he tenido el privilegio de trabajar en proyectos retadores e increíbles.
+        </p>
+        <a href="#project">Aquí hay algunos que me gustaría compartir.</a>
+        <br>
+        <a class="button-icon" href="#project"><img src="./icons/arrow-down.svg" alt=""></a>
+    </section>
+
+    <div class="testimony" id="project">
+        <div class="testimony-image">
+            <img class="mack" src="./images/img.png" alt="">
+        </div>
+        <div class="testimony-description">
+            <a class="title" target="_blank" href="https://leonidasesteban.com">leonidadesteban.com</a>
+            <p>
+                Accede a más de 120 proyectos que te ayudarán a mejorar 
+                tus habilidades como desarrollador Front-End.
+            </p>
+            <a target="_blank" href="https://leonidasesteban.com" class="button is-secundary">Ver Código</a>
+            <a target="_blank" href="https://leonidasesteban.com" class="button">Ver Proyecto</a>
+        </div>
+    </div>
+
+    <div class="testimonio">
+        <div class="tarjeta-cool">
+            <img src="./images/user.png" width="64px" height="64px" alt="Leonidas">
+            <p>
+                "Raúl ha sido de gran ayuda para acelerar ciertos esfuerzos de desarrollo. Lo que nos hubiera llevado 6 meses solo les llevó 1,5 meses ".
+            </p>
+            <p>
+                LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM
+            </p>
+        </div>
+    </div>
+
+    <div class="testimony">
+        <div class="testimony-image">
+            <img class="ipad" src="./images/📱 iPad.png" alt="">
+        </div>
+        <div class="testimony-description">
+            <a class="title" target="_blank" href="https://leonidasesteban.com">Marvol</a>
+            <p>
+                Es el sitio oficial de Marvol Entertainment. Explore películas, personajes, cómics, programas de televisión, videos y más oficiales de Marvol.
+            </p>
+            <a target="_blank" href="https://leonidasesteban.com" class="button is-secundary">Ver Código</a>
+            <a target="_blank" href="https://leonidasesteban.com" class="button">Ver Proyecto</a>
+        </div>
+    </div>
+    
+    <div class="testimonio">
+        <div class="tarjeta-cool">
+            <img src="./images/user 1.png" width="64px" height="64px" alt="Leonidas">
+            <p>
+                "Raúl ha superado mis expectativas desde el diseño hasta el desarrollo".
+            </p>
+            <p>
+                JASON LOPEZ / COFUNDADOR Y CEO MARVOL
+            </p>
+        </div>
+    </div>
+
+    <div class="testimony">
+        <div class="testimony-image">
+            <img class="iphone" src="./images/📱 Iphone X.png" alt="">
+        </div>
+        <div class="testimony-description">
+            <a class="title" target="_blank" href="https://leonidasesteban.com">NETNET</a>
+            <p>
+                Películas y series ilimitadas y mucho más.
+                Disfruta donde quieras. Cancela cuando quieras.
+            </p>
+            <a target="_blank" href="https://leonidasesteban.com" class="button is-secundary">Ver Código</a>
+            <a target="_blank" href="https://leonidasesteban.com" class="button">Ver Proyecto</a>
+        </div>
+    </div>
+    
+    <div class="testimonio">
+        <div class="tarjeta-cool">
+            <img src="./images/user 2.png" width="64px" height="64px" alt="Leonidas">
+            <p>
+                "Por primera vez en la historia de nuestra empresa, aparecimos en todas las plataformas en las que trabajamos".
+            </p>
+            <p>
+                MARCO CORTEZ / NETNET
+            </p>
+        </div>
+    </div>
+
+    <form action="" method="POST" class="formulario">
+        <h2 class="title">Hablemos</h2>
+        <p>
+            Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.
+        </p>
+
+        <label for="nombre">Nombre completo
+            <input name="nombreCompleto" id="nombre" type="text" placeholder="Juan">
+        </label>
+        
+        <label for="nombre">Correo Electronico
+            <input name="nombreCompleto" id="email" type="email" placeholder="ejemplo@ejemplo" required>
+        </label>
+        
+        <label for="nombre">Mensaje
+            <textarea name="mensaje" id="form-mesaje" cols="30" rows="7" placeholder="Mensaje"></textarea>
+        </label>
+        
+        <button class="button" type="submit"> Enviar mensaje </button>
+    </form>
+
+    <footer class="footer" id="contacto">
+        <div class="footer-logo">
+            <img src="./images/LOGO.png" width="70" height="20" alt="Logo super bonito">
+        </div>
+        
+        <div class="sociales">
+            <a class="button-icon" href="tel:2471270288"><img src="./icons/icon-phone.svg" alt=""></a>
+            <a class="button-icon" href="mail:raultamayobriones@gmail.com"><img src="./icons/icon-important_mail.svg" alt=""></a>
+            <a class="button-icon" href="dev.raul.qwerty"><img src="./icons/icon-instagram.svg" alt=""></a>
+            <a class="button-icon" href="tel:2471270288"><img src="./icons/icon-twitter_squared.svg" alt=""></a>
+        </div>
+    
+        <div class="footer-copy">
+            <p>
+                Hecho con el ♥️ por Raúl. 
+            </p>
+            <p>Copyright 2021 - Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
 </div>
 
-    
+
 
 </body>
 </html>
